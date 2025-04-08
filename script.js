@@ -1,5 +1,5 @@
 function cekGay() {
-  const name = document.getElementById("name").value.trim();
+  const name = document.getElementById("nameInput").value.trim();
   const hasil = document.getElementById("hasil");
   const gambar = document.getElementById("gambar");
 
@@ -22,7 +22,7 @@ function cekGay() {
     komentar = "Waduh, pelangi detected~!";
   }
 
-  hasil.innerText = `${name}, kamu ${persen}% gay!, ${komentar}`;
+  hasil.innerText = `${name}, kamu ${persen}% gay! ${komentar}`;
   gambar.src = "https://media.tenor.com/o3z0euFLoVkAAAAC/chuunibyou-anime.gif";
   gambar.style.display = "block";
 }
